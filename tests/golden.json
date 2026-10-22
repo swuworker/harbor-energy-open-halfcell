@@ -1,0 +1,3678 @@
+{
+  "schema_version": "1.0",
+  "status": "validated",
+  "cases": {
+    "T03": {
+      "input_sha256": "e7158b114c885ef1e0cb7b73d28dc3e96db07cef237bf86aaabc1e92696eb08f",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.12000000000000001,
+            0.12000000000000001
+          ],
+          "dissipation_w_m": 4.8e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.34395977584244747,
+            "mean_mol_m3": {
+              "v2": 287.99336486710297,
+              "v3": 460.0803544687939,
+              "h": 797.773216052043,
+              "hso4": 800.713188714931,
+              "so4": 976.6439102388514
+            },
+            "outlet_mol_m3": {
+              "v2": 282.32612929940086,
+              "v3": 464.94204694641417,
+              "h": 796.6441843678039,
+              "hso4": 801.0893778050672,
+              "so4": 977.5166030003902
+            },
+            "reaction_quadrants_a_m": [
+              0.0004626986207385444,
+              0.00045993278860587854,
+              0.00034009250735079794,
+              0.00033727608330374803
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 271.8049372004468,
+              "v3": 470.8726395798999
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0516,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T04": {
+      "input_sha256": "517f9e6a4f77ce6dc93f4474c6e1fe738550efcb0278760835207708098919a6",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.1415270401332782,
+            0.09847295986672183
+          ],
+          "dissipation_w_m": 5.287101313827711e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.343964259839258,
+            "mean_mol_m3": {
+              "v2": 288.01106797711776,
+              "v3": 460.06868588087013,
+              "h": 797.7751791024244,
+              "hso4": 800.7135100150149,
+              "so4": 976.6449313421275
+            },
+            "outlet_mol_m3": {
+              "v2": 282.3406222080601,
+              "v3": 464.926302445145,
+              "h": 796.6729539995271,
+              "hso4": 801.0910665945792,
+              "so4": 977.5210195782513
+            },
+            "reaction_quadrants_a_m": [
+              0.0004920552579983106,
+              0.0004308829327921631,
+              0.00034566405316296847,
+              0.00033139775604556273
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 271.83589679719023,
+              "v3": 470.8521333341551
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0731,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T05": {
+      "input_sha256": "867ccbac15206e810cbaf7d30d19f7382d29d3f254c1046e78968502ca5a8b51",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.09847295986672183,
+            0.1415270401332782
+          ],
+          "dissipation_w_m": 5.287101313827711e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.3439621398272282,
+            "mean_mol_m3": {
+              "v2": 288.0120526001824,
+              "v3": 460.0702315066714,
+              "h": 797.7701216047706,
+              "hso4": 800.7139595918031,
+              "so4": 976.6454808666736
+            },
+            "outlet_mol_m3": {
+              "v2": 282.3485612730817,
+              "v3": 464.9333142066321,
+              "h": 796.6149913641736,
+              "hso4": 801.0877711533672,
+              "so4": 977.5121426884326
+            },
+            "reaction_quadrants_a_m": [
+              0.0004335512209637357,
+              0.0004892410584118412,
+              0.00033428720352840903,
+              0.0003429205170950194
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 271.8276058224185,
+              "v3": 470.85986269184866
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0726,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T06": {
+      "input_sha256": "cb637987cf0968bff3d9b077f092b977ea3ee856c5ed9073f09a68fd0834f470",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13076352006663908,
+            0.10923647993336093
+          ],
+          "dissipation_w_m": 4.921775328456928e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.34371593474633577,
+            "mean_mol_m3": {
+              "v2": 287.9833308661575,
+              "v3": 460.0925747979225,
+              "h": 797.7703918385229,
+              "hso4": 800.7156830186414,
+              "so4": 976.6495474729782
+            },
+            "outlet_mol_m3": {
+              "v2": 282.2627504267365,
+              "v3": 464.99173590224154,
+              "h": 796.6518903003947,
+              "hso4": 801.0947199872963,
+              "so4": 977.528939436648
+            },
+            "reaction_quadrants_a_m": [
+              0.000479591424652534,
+              0.0004372704383973774,
+              0.0003463519406155922,
+              0.0003367861963328833
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 263.4654526097285,
+              "v3": 476.43782696887575
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0518,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T07": {
+      "input_sha256": "7a346d48c42cc0df180d173ba62f0f7ef570bb857579bdb13e7ba06bc4d3fb8a",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.04245811203998345,
+            0.029541887960016548
+          ],
+          "dissipation_w_m": 4.75839118244494e-12
+        },
+        "states": [
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.34175265338859795,
+            "mean_mol_m3": {
+              "v2": 281.8245124312362,
+              "v3": 464.5418706532663,
+              "h": 797.7127424394536,
+              "hso4": 800.8638428634688,
+              "so4": 977.0617681991228
+            },
+            "outlet_mol_m3": {
+              "v2": 274.0995932189152,
+              "v3": 470.9821361244321,
+              "h": 796.5629738839067,
+              "hso4": 801.3337892669925,
+              "so4": 978.1873897140204
+            },
+            "reaction_quadrants_a_m": [
+              0.0004975835004804636,
+              0.0004321795816344086,
+              0.00034091809431613206,
+              0.0003293188235669828
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 255.66058368634887,
+              "v3": 481.9844898165229
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0682,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T08": {
+      "input_sha256": "a6249cd59f870d5d109da7d15129321638d65a23ba189878ee1ba73f6e6f8e18",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.1397457598250724,
+            0.19625424017492762
+          ],
+          "dissipation_w_m": 1.0247108122648517e-10
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.34290815730608365,
+            "mean_mol_m3": {
+              "v2": 285.3929541773229,
+              "v3": 462.2349756897578,
+              "h": 797.295712253673,
+              "hso4": 800.8487146024097,
+              "so4": 976.9689165375901
+            },
+            "outlet_mol_m3": {
+              "v2": 277.34757901433784,
+              "v3": 468.8298321958813,
+              "h": 795.9363641125287,
+              "hso4": 801.2597591012498,
+              "so4": 977.9306298138
+            },
+            "reaction_quadrants_a_m": [
+              0.0005528769714386535,
+              0.0006218184377706436,
+              0.000405009032077995,
+              0.0004202955587125603
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 267.7105504898508,
+              "v3": 474.02324481473914
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0598,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T09": {
+      "input_sha256": "1b8fe6b83598efd4c82fe2b70b7b610cc06f36b6b42fda9ef4507790070fd265",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.327090400291546,
+            0.23290959970845398
+          ],
+          "dissipation_w_m": 1.2198938241248238e-10
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.3411640184886202,
+            "mean_mol_m3": {
+              "v2": 284.9455672104173,
+              "v3": 462.46827102183465,
+              "h": 797.488907792448,
+              "hso4": 800.8445833222517,
+              "so4": 976.9701359782683
+            },
+            "outlet_mol_m3": {
+              "v2": 277.09482704556945,
+              "v3": 468.9301264140449,
+              "h": 796.2620605484733,
+              "hso4": 801.2756856676478,
+              "so4": 977.98320410705
+            },
+            "reaction_quadrants_a_m": [
+              0.0005512162401383653,
+              0.00046701216882221846,
+              0.0004002281852016181,
+              0.00038154340583695034
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 248.08916206229637,
+              "v3": 487.03920778725006
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0457,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T10": {
+      "input_sha256": "365d39ddb95e13f765c191a5eec0a9fbfe65722e2c181a28eb115f69dccd3475",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.3275888386767639,
+            0.3924111613232361
+          ],
+          "dissipation_w_m": 9.080028517589595e-11
+        },
+        "states": [
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.34370220650305855,
+            "mean_mol_m3": {
+              "v2": 281.9335843384282,
+              "v3": 466.13008064829125,
+              "h": 793.8921409979001,
+              "hso4": 801.1433559511811,
+              "so4": 977.5030978342218
+            },
+            "outlet_mol_m3": {
+              "v2": 277.35864738871516,
+              "v3": 471.1913300706317,
+              "h": 790.7862145972574,
+              "hso4": 801.6965266111714,
+              "so4": 978.690486487706
+            },
+            "reaction_quadrants_a_m": [
+              0.0006862097345071325,
+              0.0007455008421705849,
+              0.0004854359757550076,
+              0.00048285344755881476
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 267.0497112343195,
+              "v3": 476.05266271769744
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.1595,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T11": {
+      "input_sha256": "f8efa8a46573413007dbc689cef2bbcbc8f22f1ef7230f11fb1a7ff6be86233e",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.34378515237385227,
+            "mean_mol_m3": {
+              "v2": 286.65966428824333,
+              "v3": 460.8452397407894,
+              "h": 148.4492238931786,
+              "hso4": 150.16578077736511,
+              "so4": 977.0692454573344
+            },
+            "outlet_mol_m3": {
+              "v2": 279.99724781633455,
+              "v3": 466.2627390677418,
+              "h": 147.69026030666765,
+              "hso4": 150.24871976398526,
+              "so4": 978.1121266892886
+            },
+            "reaction_quadrants_a_m": [
+              0.0004959536212737104,
+              0.00044360670200312754,
+              0.000336785333813239,
+              0.0003236543429096113
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 270.4808762230718,
+              "v3": 471.63109845090196
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0597,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T12": {
+      "input_sha256": "ed8cb6153825f6081180a2666f2c3026ac7e4fe25cbf03bf3adf4a2e22d246e2",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 55.0,
+            "collector_voltage_v": -0.3437211116033959,
+            "mean_mol_m3": {
+              "v2": 286.2198279413394,
+              "v3": 461.41164877943567,
+              "h": 797.8453077578542,
+              "hso4": 800.6762396834347,
+              "so4": 976.9218351477019
+            },
+            "outlet_mol_m3": {
+              "v2": 279.20579556659413,
+              "v3": 467.1785075439867,
+              "h": 796.7912679522767,
+              "hso4": 801.0184336217333,
+              "so4": 977.8599740478459
+            },
+            "reaction_quadrants_a_m": [
+              0.000500039625195281,
+              0.00044599423103189025,
+              0.00033386201703147593,
+              0.00032010412674118155
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 270.04290257081146,
+              "v3": 472.19626569312135
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0552,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T13": {
+      "input_sha256": "79380d9cce35a28657cb46205e223d6b665b0b5c8e61678a4e88b9bd4270bc43",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.10311804008121642,
+            0.07688195991878363
+          ],
+          "dissipation_w_m": 2.880879174397449e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.3440814800241001,
+            "mean_mol_m3": {
+              "v2": 286.84024853284535,
+              "v3": 457.7460446698698,
+              "h": 799.2384144643394,
+              "hso4": 799.1864285102978,
+              "so4": 973.4853085146722
+            },
+            "outlet_mol_m3": {
+              "v2": 280.71335871887146,
+              "v3": 461.4561479383872,
+              "h": 798.8233594117495,
+              "hso4": 798.8357975975505,
+              "so4": 972.8913615335512
+            },
+            "reaction_quadrants_a_m": [
+              0.00042554317572974,
+              0.00037932710986886606,
+              0.0003027142742801611,
+              0.0002924154401196651
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 265.6668826763961,
+              "v3": 461.71605076795544
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0595,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T14": {
+      "input_sha256": "2fadaef91fcfd5f2f0aae77601bb4e389ac162341fb6fec9f6d752aae7f358d4",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.1011638398833816,
+            0.1388361601166184
+          ],
+          "dissipation_w_m": 5.172936943399341e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.35442096637366755,
+            "mean_mol_m3": {
+              "v2": 311.672102235032,
+              "v3": 440.4852014811368,
+              "h": 501.74867300783035,
+              "hso4": 1198.8475826675588,
+              "so4": 623.8504496268752
+            },
+            "outlet_mol_m3": {
+              "v2": 317.518901822923,
+              "v3": 435.7111109947339,
+              "h": 502.6420819678212,
+              "hso4": 1198.2705432537684,
+              "so4": 623.27133767205
+            },
+            "reaction_quadrants_a_m": [
+              -0.0003887343787325942,
+              -0.0004315461463318044,
+              -0.0002864559971541018,
+              -0.00029326347778154164
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 325.83642098692343,
+              "v3": 431.0423223132115
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0554,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T15": {
+      "input_sha256": "00fb2c0d085906551755d39cec51e78d5eab0b39551830b9e1843f888eb79270",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 45.0,
+            "collector_voltage_v": -0.34316847992842403,
+            "mean_mol_m3": {
+              "v2": 95.23517841535414,
+              "v3": 153.95049890026561,
+              "h": 179.26272831219472,
+              "hso4": 120.12903688661363,
+              "so4": 355.72777247854253
+            },
+            "outlet_mol_m3": {
+              "v2": 92.91351120923713,
+              "v3": 155.89292545579616,
+              "h": 178.90014271159995,
+              "hso4": 120.19550084576407,
+              "so4": 356.1052203258495
+            },
+            "reaction_quadrants_a_m": [
+              0.00018412293644871165,
+              0.00016549126098571598,
+              0.00012720656668187736,
+              0.00012317923588336862
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 89.16706299105624,
+              "v3": 157.9959091831306
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.04,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T16": {
+      "input_sha256": "54f692e44e87f52804db6dbbd651a101df0d14d74966f821b2417b2418479601",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.353718582094364,
+            "mean_mol_m3": {
+              "v2": 309.3389435918686,
+              "v3": 440.5838460014594,
+              "h": 809.7571501493535,
+              "hso4": 800.0317579553056,
+              "so4": 975.0774086910824
+            },
+            "outlet_mol_m3": {
+              "v2": 313.96217837562943,
+              "v3": 435.8658686397878,
+              "h": 814.8942161331695,
+              "hso4": 800.0708410837644,
+              "so4": 975.1726688600132
+            },
+            "reaction_quadrants_a_m": [
+              -0.0004880627266478394,
+              -0.00045355562248832696,
+              -0.00033497800112244414,
+              -0.0003234036497413899
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 315.8208650737747,
+              "v3": 434.1019245195544
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0388,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T17": {
+      "input_sha256": "99df2297f78c9a9e062836f509eb74ad30427f4f90dce0c7b227642ba0bc6141",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.06874536005414426,
+            0.051254639945855746
+          ],
+          "dissipation_w_m": 1.2803907441766439e-11
+        },
+        "states": [
+          {
+            "time_s": 55.0,
+            "collector_voltage_v": -0.3429138187883626,
+            "mean_mol_m3": {
+              "v2": 281.0744309271858,
+              "v3": 465.5857385082088,
+              "h": 796.9249679875234,
+              "hso4": 801.0277417848428,
+              "so4": 977.4016517908402
+            },
+            "outlet_mol_m3": {
+              "v2": 272.7864380316371,
+              "v3": 472.62622458474783,
+              "h": 795.4091634889095,
+              "hso4": 801.5592031402495,
+              "so4": 978.6507550830885
+            },
+            "reaction_quadrants_a_m": [
+              0.0004535007218915996,
+              0.0004032084204114518,
+              0.00027587063604575453,
+              0.0002674202216494128
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 262.40055263478934,
+              "v3": 478.03499070313836
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0857,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T18": {
+      "input_sha256": "3db6f0a63014b8697a3720f9e22b81c2ead30df1e5dcdc7ea9b605fdb2543252",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 45.0,
+            "collector_voltage_v": -0.3447084984638725,
+            "mean_mol_m3": {
+              "v2": 289.9997283478261,
+              "v3": 458.2628826146357,
+              "h": 798.3678330940434,
+              "hso4": 800.5568912397708,
+              "so4": 976.299523196914
+            },
+            "outlet_mol_m3": {
+              "v2": 285.1783794777806,
+              "v3": 462.2988295996235,
+              "h": 797.5595922548039,
+              "hso4": 800.8477789275438,
+              "so4": 976.9825305408459
+            },
+            "reaction_quadrants_a_m": [
+              0.00042445295304631794,
+              0.0003779386719720656,
+              0.0003056049767598622,
+              0.00029200339822151744
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 275.8459580506777,
+              "v3": 467.6987294793998
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0519,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T19": {
+      "input_sha256": "7692c35d1d478386fa978b64cc44590c3cc49bf4e0710cea2be8262c62db1316",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 45.0,
+            "collector_voltage_v": -0.3369447194895802,
+            "mean_mol_m3": {
+              "v2": 283.94491845911324,
+              "v3": 463.4176035327019,
+              "h": 797.1761070863332,
+              "hso4": 800.9437194126778,
+              "so4": 977.1875175949938
+            },
+            "outlet_mol_m3": {
+              "v2": 275.50310118443605,
+              "v3": 470.45088796344083,
+              "h": 795.7752381166706,
+              "hso4": 801.4401796682396,
+              "so4": 978.3469623538131
+            },
+            "reaction_quadrants_a_m": [
+              0.0005846536595426755,
+              0.0005048962130474585,
+              0.00046421967565399953,
+              0.00044623045175263664
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 222.72803115940582,
+              "v3": 504.2288617325065
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0459,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T20": {
+      "input_sha256": "f6f340b91daa49682c18a23af55c19ff0f518286af8912bbd633b9155224830d",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.3421356467338703,
+            "mean_mol_m3": {
+              "v2": 280.2246568649632,
+              "v3": 466.2910157152433,
+              "h": 796.7363436813496,
+              "hso4": 801.0675519254745,
+              "so4": 977.4955763157616
+            },
+            "outlet_mol_m3": {
+              "v2": 270.80814140336906,
+              "v3": 474.11106262882356,
+              "h": 795.1502462393302,
+              "hso4": 801.6003075788948,
+              "so4": 978.7497046768227
+            },
+            "reaction_quadrants_a_m": [
+              0.0007961463753057944,
+              0.000670975642452614,
+              0.0004852178167250788,
+              0.00044766016551301557
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 256.0169911187834,
+              "v3": 482.429459546029
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0877,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T21": {
+      "input_sha256": "cc0bf5385790e50ff3624f57b67206e6ae9126d6006990c1a257e71e15780c82",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.34322247956605917,
+            "mean_mol_m3": {
+              "v2": 283.47417971388126,
+              "v3": 463.62705410705837,
+              "h": 797.2672550852467,
+              "hso4": 800.8983994241338,
+              "so4": 977.0991887050245
+            },
+            "outlet_mol_m3": {
+              "v2": 275.4931980702604,
+              "v3": 470.24713150452345,
+              "h": 795.9371598580939,
+              "hso4": 801.3484930360772,
+              "so4": 978.1582287380539
+            },
+            "reaction_quadrants_a_m": [
+              0.0006442266315210667,
+              0.0005631999234225473,
+              0.0004052700094501949,
+              0.00038730343560432223
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 263.27077115984554,
+              "v3": 477.0959931430812
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0776,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T22": {
+      "input_sha256": "d900b6425811d54c8e41b5a3e190b879a714a6c204a08359f0b6aa4587e2c9ec",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.3553523356794026,
+            "mean_mol_m3": {
+              "v2": 316.50430115470573,
+              "v3": 436.3923237604637,
+              "h": 802.7353961157274,
+              "hso4": 799.1040477592156,
+              "so4": 972.9084609736597
+            },
+            "outlet_mol_m3": {
+              "v2": 324.41103364473486,
+              "v3": 429.82124167435006,
+              "h": 804.0701996127807,
+              "hso4": 798.6538223728293,
+              "so4": 971.8510847762346
+            },
+            "reaction_quadrants_a_m": [
+              -0.000650293623756396,
+              -0.00056629082844447,
+              -0.00040109909140100306,
+              -0.00038231645639820585
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 336.70412772626554,
+              "v3": 422.9257727127579
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0787,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T23": {
+      "input_sha256": "c1de5076ab3814765750935cb2f236360b430eb51c1fb99e0e7a1fa746806aad",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.3200595209789883,
+            "mean_mol_m3": {
+              "v2": 186.48143450226587,
+              "v3": 611.3310684744039,
+              "h": 797.5793579916325,
+              "hso4": 800.7316017545943,
+              "so4": 1101.9019153323875
+            },
+            "outlet_mol_m3": {
+              "v2": 179.75570117749834,
+              "v3": 617.0302900061761,
+              "h": 796.3715413817147,
+              "hso4": 801.122616818907,
+              "so4": 1102.9255984681663
+            },
+            "reaction_quadrants_a_m": [
+              0.0005252173778591369,
+              0.0004685439636438911,
+              0.00040957532536444076,
+              0.00039666333311427635
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 156.15158244952403,
+              "v3": 631.5509698428996
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.055,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T24": {
+      "input_sha256": "d651f59c454f18cb184b697e951b9a547d5e8ab412cdff197e207994babfa5b9",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.40797279690519217,
+            "mean_mol_m3": {
+              "v2": 712.3442130275657,
+              "v3": 149.5188671941508,
+              "h": 802.357575693795,
+              "hso4": 799.1908672002387,
+              "so4": 938.2058680655751
+            },
+            "outlet_mol_m3": {
+              "v2": 718.4243734034226,
+              "v3": 144.2780275443891,
+              "h": 803.5420269831143,
+              "hso4": 798.7555589856864,
+              "so4": 937.2346487187197
+            },
+            "reaction_quadrants_a_m": [
+              -0.00047125225810355857,
+              -0.0004234091775111216,
+              -0.00035820547376784093,
+              -0.0003471330906113686
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 739.3115015486064,
+              "v3": 131.54067484679211
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0476,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T25": {
+      "input_sha256": "976fdd17e01d8057341b8f95a6aaa7bbebe39b2f18782a6847035139d6349cce",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 50.0,
+            "collector_voltage_v": -0.34535709726279595,
+            "mean_mol_m3": {
+              "v2": 281.3995472708898,
+              "v3": 465.0780635397728,
+              "h": 796.9942386580533,
+              "hso4": 800.8808719736772,
+              "so4": 977.073325922741
+            },
+            "outlet_mol_m3": {
+              "v2": 274.8947971926886,
+              "v3": 470.6859954219015,
+              "h": 795.5591702815364,
+              "hso4": 801.2956137263803,
+              "so4": 978.0555686031192
+            },
+            "reaction_quadrants_a_m": [
+              0.0009645807791250734,
+              0.0008105487940123575,
+              0.00033353743844170386,
+              0.00029133298841804993
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 275.3490737141756,
+              "v3": 469.1117125775851
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.2357,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T26": {
+      "input_sha256": "9b91ff58d0c120e44ee8d8e827310fde001d64657ed3c9d517ee471d8c968603",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.09981839987505171,
+            0.1401816001249483
+          ],
+          "dissipation_w_m": 5.2281163891063873e-11
+        },
+        "states": [
+          {
+            "time_s": 45.0,
+            "collector_voltage_v": -0.3553656563181508,
+            "mean_mol_m3": {
+              "v2": 314.2262620049496,
+              "v3": 438.16309802938594,
+              "h": 802.4917243725051,
+              "hso4": 799.1902464709419,
+              "so4": 973.1216479998104
+            },
+            "outlet_mol_m3": {
+              "v2": 321.00304008034635,
+              "v3": 432.4372762551949,
+              "h": 803.7702738081143,
+              "hso4": 798.7761918478819,
+              "so4": 972.1559954432548
+            },
+            "reaction_quadrants_a_m": [
+              -0.0005006172102964344,
+              -0.0005683357139536951,
+              -0.00036103757995650863,
+              -0.00037000949579371297
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 332.4228355422732,
+              "v3": 426.0320490045031
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0776,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T27": {
+      "input_sha256": "189e9490c38734bf69ae6eabd7a5b661b69b83173a327bbe798eb23fdb8ddd0b",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.34396277985388674,
+            "mean_mol_m3": {
+              "v2": 288.00478996571036,
+              "v3": 460.07269114082465,
+              "h": 797.774879271128,
+              "hso4": 800.7133810199791,
+              "so4": 976.6445758025177
+            },
+            "outlet_mol_m3": {
+              "v2": 282.3347429076817,
+              "v3": 464.93139653498133,
+              "h": 796.6675671212149,
+              "hso4": 801.0907632715799,
+              "so4": 977.5202396349717
+            },
+            "reaction_quadrants_a_m": [
+              0.00048675510092877273,
+              0.0004360752048196149,
+              0.00034464082110851734,
+              0.0003325288731420879
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 271.82513874750055,
+              "v3": 470.85912528629876
+            }
+          },
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.34875325267839313,
+            "mean_mol_m3": {
+              "v2": 293.53364626871223,
+              "v3": 454.76837072289095,
+              "h": 800.0000431057377,
+              "hso4": 800.214697436614,
+              "so4": 975.5788751876091
+            },
+            "outlet_mol_m3": {
+              "v2": 288.88783303182265,
+              "v3": 458.00241908645506,
+              "h": 800.0687220303151,
+              "hso4": 800.282120778248,
+              "so4": 975.7847622875388
+            },
+            "reaction_quadrants_a_m": [
+              4.547624980897042e-05,
+              3.5508545855767894e-05,
+              -3.843867102148243e-05,
+              -4.2546124643261054e-05
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 293.54039488416515,
+              "v3": 454.76387164592137
+            }
+          },
+          {
+            "time_s": 100.0,
+            "collector_voltage_v": -0.3547365583393558,
+            "mean_mol_m3": {
+              "v2": 310.167708394687,
+              "v3": 441.0371365040896,
+              "h": 802.3064428454378,
+              "hso4": 799.2361704213245,
+              "so4": 973.2585493628803
+            },
+            "outlet_mol_m3": {
+              "v2": 314.45459714532336,
+              "v3": 436.9470898000731,
+              "h": 803.4998335148931,
+              "hso4": 798.789719184185,
+              "so4": 972.2302890107867
+            },
+            "reaction_quadrants_a_m": [
+              -0.0004731862536625861,
+              -0.00042669311281396673,
+              -0.00035534734140359105,
+              -0.00034477329212066255
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 326.3513686526915,
+              "v3": 430.2480296654202
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0922,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T28": {
+      "input_sha256": "2ac0ef69b46aced34f4ae0f8246a78d938784dae161f4590e89ddabd2aa754a9",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 30.0,
+            "collector_voltage_v": -0.3534599105119864,
+            "mean_mol_m3": {
+              "v2": 307.6629855395078,
+              "v3": 443.42909524043984,
+              "h": 801.6752066407963,
+              "hso4": 799.5094066817115,
+              "so4": 973.8895283797083
+            },
+            "outlet_mol_m3": {
+              "v2": 310.94860267265574,
+              "v3": 440.4521339379465,
+              "h": 802.5269490707456,
+              "hso4": 799.237738811021,
+              "so4": 973.2714087094378
+            },
+            "reaction_quadrants_a_m": [
+              -0.0003547067053143811,
+              -0.000319718140401167,
+              -0.00026694626279430916,
+              -0.0002586288914904104
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 319.80046806624006,
+              "v3": 435.33744022262016
+            }
+          },
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.3459739525156128,
+            "mean_mol_m3": {
+              "v2": 295.3638398168841,
+              "v3": 454.4175921863421,
+              "h": 798.2963268522606,
+              "hso4": 800.4296542823726,
+              "so4": 975.9235643813383
+            },
+            "outlet_mol_m3": {
+              "v2": 294.3277091505012,
+              "v3": 455.9035911841421,
+              "h": 797.3874485248679,
+              "hso4": 800.7046357379346,
+              "so4": 976.5245023201808
+            },
+            "reaction_quadrants_a_m": [
+              0.00033366272989354706,
+              0.0003028257212102059,
+              0.00028464715896073315,
+              0.0002788643899303584
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 283.2239134040726,
+              "v3": 462.510876461547
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0815,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T29": {
+      "input_sha256": "274af2d8e529a608c81d712a1135a13bda1e2ab72a400ec4bd4dfdca6c882ba2",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 40.0,
+            "collector_voltage_v": -0.34396277985388674,
+            "mean_mol_m3": {
+              "v2": 288.00478996571036,
+              "v3": 460.07269114082465,
+              "h": 797.774879271128,
+              "hso4": 800.7133810199791,
+              "so4": 976.6445758025177
+            },
+            "outlet_mol_m3": {
+              "v2": 282.3347429076817,
+              "v3": 464.93139653498133,
+              "h": 796.6675671212149,
+              "hso4": 801.0907632715799,
+              "so4": 977.5202396349717
+            },
+            "reaction_quadrants_a_m": [
+              0.00048675510092877273,
+              0.0004360752048196149,
+              0.00034464082110851734,
+              0.0003325288731420879
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 271.82513874750055,
+              "v3": 470.85912528629876
+            }
+          },
+          {
+            "time_s": 80.0,
+            "collector_voltage_v": -0.343503574634725,
+            "mean_mol_m3": {
+              "v2": 284.5609794775628,
+              "v3": 462.3670006267557,
+              "h": 797.8578110648681,
+              "hso4": 800.7092660151412,
+              "so4": 976.6857529425586
+            },
+            "outlet_mol_m3": {
+              "v2": 276.2999857191884,
+              "v3": 468.820674086155,
+              "h": 796.8558919666922,
+              "hso4": 801.026258300822,
+              "so4": 977.4458136813565
+            },
+            "reaction_quadrants_a_m": [
+              0.0005113738534896969,
+              0.0004550348566866431,
+              0.00032444284764043645,
+              0.0003091484421832156
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 268.3855094126634,
+              "v3": 473.1506473366869
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.067,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T30": {
+      "input_sha256": "177b5807063373de65a3fbbe71c582808d2e97c0e0116664d5ea65c2c4d92a94",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.34366082898319766,
+            "mean_mol_m3": {
+              "v2": 285.7558967131541,
+              "v3": 461.618990605081,
+              "h": 797.8149754359731,
+              "hso4": 800.7327369651395,
+              "so4": 976.7255018561968
+            },
+            "outlet_mol_m3": {
+              "v2": 278.3997159642146,
+              "v3": 467.5508780398677,
+              "h": 796.7660914256219,
+              "hso4": 801.0867728149494,
+              "so4": 977.5656923293525
+            },
+            "reaction_quadrants_a_m": [
+              0.0005029343167637301,
+              0.00044855519844630453,
+              0.00033131124877241596,
+              0.00031719923601745823
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 269.578954602401,
+              "v3": 472.4036186789194
+            }
+          },
+          {
+            "time_s": 90.0,
+            "collector_voltage_v": -0.3488819255778199,
+            "mean_mol_m3": {
+              "v2": 294.4041563817744,
+              "v3": 453.8310194640642,
+              "h": 800.1021182604464,
+              "hso4": 800.0436289591507,
+              "so4": 975.1799302285174
+            },
+            "outlet_mol_m3": {
+              "v2": 290.2158793792676,
+              "v3": 456.49123304080774,
+              "h": 800.2475020127061,
+              "hso4": 799.9849288252055,
+              "so4": 975.0840155342294
+            },
+            "reaction_quadrants_a_m": [
+              3.911053418588587e-05,
+              3.0374948854344e-05,
+              -3.240199083915854e-05,
+              -3.708349220112599e-05
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 294.41035479651987,
+              "v3": 453.8268871875638
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.1225,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T31": {
+      "input_sha256": "bbe8a9f33cf58dcf7934d09f8933f988081f992cd7c6037e88772217db14ca1b",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 30.0,
+            "collector_voltage_v": -0.3455752876081841,
+            "mean_mol_m3": {
+              "v2": 292.33904206859717,
+              "v3": 456.5677100864882,
+              "h": 798.3282055334348,
+              "hso4": 800.4900133402682,
+              "so4": 976.1097032949112
+            },
+            "outlet_mol_m3": {
+              "v2": 289.0590686056904,
+              "v3": 459.53796445643866,
+              "h": 797.4800609587594,
+              "hso4": 800.7605242500234,
+              "so4": 976.7257836447166
+            },
+            "reaction_quadrants_a_m": [
+              0.00035525997069618003,
+              0.00031956713009690833,
+              0.0002666790064086088,
+              0.0002584938927974474
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 280.20257181873706,
+              "v3": 464.65869025306296
+            }
+          },
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.346532932145886,
+            "mean_mol_m3": {
+              "v2": 291.8684553303168,
+              "v3": 456.527938478854,
+              "h": 798.9169832351123,
+              "hso4": 800.3868576944136,
+              "so4": 975.9254258189495
+            },
+            "outlet_mol_m3": {
+              "v2": 287.43664227560015,
+              "v3": 459.9935549802724,
+              "h": 798.41181660352,
+              "hso4": 800.5628466310795,
+              "so4": 976.3514597322285
+            },
+            "reaction_quadrants_a_m": [
+              0.0002582846092044043,
+              0.00022976180096415414,
+              0.00015991125160609224,
+              0.00015204233822534944
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 283.78075739442005,
+              "v3": 461.9197371027887
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0638,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T32": {
+      "input_sha256": "4411e5b8240abc28f4be965a02087c6812d6e1a5714bac7ea88a997ca82a8bcd",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 30.0,
+            "collector_voltage_v": -0.3534599105119864,
+            "mean_mol_m3": {
+              "v2": 307.6629855395078,
+              "v3": 443.42909524043984,
+              "h": 801.6752066407963,
+              "hso4": 799.5094066817115,
+              "so4": 973.8895283797083
+            },
+            "outlet_mol_m3": {
+              "v2": 310.94860267265574,
+              "v3": 440.4521339379465,
+              "h": 802.5269490707456,
+              "hso4": 799.237738811021,
+              "so4": 973.2714087094378
+            },
+            "reaction_quadrants_a_m": [
+              -0.0003547067053143811,
+              -0.000319718140401167,
+              -0.00026694626279430916,
+              -0.0002586288914904104
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 319.80046806624006,
+              "v3": 435.33744022262016
+            }
+          },
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.34731939793030453,
+            "mean_mol_m3": {
+              "v2": 297.9177008215715,
+              "v3": 452.2280919145157,
+              "h": 798.8534095752851,
+              "hso4": 800.2662193241428,
+              "so4": 975.5534338189191
+            },
+            "outlet_mol_m3": {
+              "v2": 297.97650551803827,
+              "v3": 452.72304271255496,
+              "h": 798.2269126393383,
+              "hso4": 800.451048420055,
+              "so4": 975.9490016965125
+            },
+            "reaction_quadrants_a_m": [
+              0.00021527510098189924,
+              0.00019637626950724186,
+              0.00019571516975743088,
+              0.00019263345975175384
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 289.82319239596393,
+              "v3": 457.6244308649213
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0724,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T33": {
+      "input_sha256": "6d7de29a6181c294d37143105051d9b0acddd696f46322c22ea5e8562137ba05",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 0.5,
+            "collector_voltage_v": -0.3445929574548159,
+            "mean_mol_m3": {
+              "v2": 299.66662184503446,
+              "v3": 450.32829256946565,
+              "h": 799.7040671931561,
+              "hso4": 800.0042237080498,
+              "so4": 975.0089824417842
+            },
+            "outlet_mol_m3": {
+              "v2": 299.6543278576742,
+              "v3": 450.3448716968149,
+              "h": 799.6646633337424,
+              "hso4": 800.0015433653401,
+              "so4": 975.0031953870975
+            },
+            "reaction_quadrants_a_m": [
+              0.0005239090180363559,
+              0.0004767764102017633,
+              0.0005069797841709435,
+              0.0004923347875909181
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 279.43332806679365,
+              "v3": 463.817155088292
+            }
+          },
+          {
+            "time_s": 5.5,
+            "collector_voltage_v": -0.34955162950893004,
+            "mean_mol_m3": {
+              "v2": 299.7240509332017,
+              "v3": 450.2505744200005,
+              "h": 799.9004473381103,
+              "hso4": 800.0189437545226,
+              "so4": 975.0406643549965
+            },
+            "outlet_mol_m3": {
+              "v2": 299.65733047913255,
+              "v3": 450.3287611804853,
+              "h": 799.8580264034434,
+              "hso4": 800.0310987228967,
+              "so4": 975.0639360901342
+            },
+            "reaction_quadrants_a_m": [
+              1.133541451597555e-06,
+              9.661350587096093e-07,
+              -1.1452275355039915e-06,
+              -9.544489748031754e-07
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 299.7241583357836,
+              "v3": 450.25050281828175
+            }
+          },
+          {
+            "time_s": 35.5,
+            "collector_voltage_v": -0.3521698415048616,
+            "mean_mol_m3": {
+              "v2": 304.9983466293756,
+              "v3": 445.7010376883407,
+              "h": 801.1159011652194,
+              "hso4": 799.6765348619529,
+              "so4": 974.2695863135217
+            },
+            "outlet_mol_m3": {
+              "v2": 307.1074449951532,
+              "v3": 443.7727047461536,
+              "h": 801.6858227296235,
+              "hso4": 799.4966086107946,
+              "so4": 973.8611091737979
+            },
+            "reaction_quadrants_a_m": [
+              -0.0002357370473168214,
+              -0.00021251668016667434,
+              -0.00017860025705218905,
+              -0.00017314601546438942
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 313.09003320086333,
+              "v3": 440.3065799740149
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0535,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T34": {
+      "input_sha256": "001306bca66b2aecefeb8f5b0d1ab37e9b2a663412655e7a9ddd14e59eb6c0cf",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.009847295986672182,
+            0.014152704013327818
+          ],
+          "dissipation_w_m": 5.28710131382771e-13
+        },
+        "states": [
+          {
+            "time_s": 60.0,
+            "collector_voltage_v": -0.33951827474455515,
+            "mean_mol_m3": {
+              "v2": 280.5144392045481,
+              "v3": 465.564937030465,
+              "h": 797.6553208514077,
+              "hso4": 800.9292153998675,
+              "so4": 977.2248974760162
+            },
+            "outlet_mol_m3": {
+              "v2": 272.6120035878918,
+              "v3": 472.25581826104315,
+              "h": 796.4022047030584,
+              "hso4": 801.4493522818403,
+              "so4": 978.4721571900651
+            },
+            "reaction_quadrants_a_m": [
+              0.00041727655609066566,
+              0.00048295914766829787,
+              0.0003453340226329715,
+              0.0003544302736032258
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 239.92698152004266,
+              "v3": 492.62324215347013
+            }
+          },
+          {
+            "time_s": 120.0,
+            "collector_voltage_v": -0.3577456989231617,
+            "mean_mol_m3": {
+              "v2": 311.2496245743773,
+              "v3": 439.24206658138235,
+              "h": 802.7253534386276,
+              "hso4": 798.761261107958,
+              "so4": 972.0947706117859
+            },
+            "outlet_mol_m3": {
+              "v2": 314.6696109148151,
+              "v3": 435.11431669389435,
+              "h": 804.2130940838551,
+              "hso4": 798.0489735905528,
+              "so4": 970.4231462023081
+            },
+            "reaction_quadrants_a_m": [
+              -0.0003989523610792242,
+              -0.0004574130477787989,
+              -0.00036749371907448424,
+              -0.00037614087206911534
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 351.858137805827,
+              "v3": 412.169724427083
+            }
+          },
+          {
+            "time_s": 180.0,
+            "collector_voltage_v": -0.3428112086458261,
+            "mean_mol_m3": {
+              "v2": 290.0973584994041,
+              "v3": 458.5657724233579,
+              "h": 798.1328268952993,
+              "hso4": 800.721312024679,
+              "so4": 976.6517745697508
+            },
+            "outlet_mol_m3": {
+              "v2": 286.71471342853926,
+              "v3": 461.918497276837,
+              "h": 797.1253951108704,
+              "hso4": 801.1306054823625,
+              "so4": 977.5898541580485
+            },
+            "reaction_quadrants_a_m": [
+              0.0003009774384468661,
+              0.0003469056709840041,
+              0.0002725745040385781,
+              0.00027954238652663907
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 259.649092626233,
+              "v3": 478.8646163388095
+            }
+          },
+          {
+            "time_s": 240.0,
+            "collector_voltage_v": -0.35597030487151593,
+            "mean_mol_m3": {
+              "v2": 310.46258972671507,
+              "v3": 440.87746266937296,
+              "h": 801.9138934066282,
+              "hso4": 799.2020649008294,
+              "so4": 973.1346979836717
+            },
+            "outlet_mol_m3": {
+              "v2": 314.1389878291604,
+              "v3": 437.21978184342555,
+              "h": 802.9509444609427,
+              "hso4": 798.7471058336131,
+              "so4": 972.0705799079635
+            },
+            "reaction_quadrants_a_m": [
+              -0.0003036854747406232,
+              -0.00034872298027535296,
+              -0.0002705625119757138,
+              -0.00027702903300874085
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 340.916371816758,
+              "v3": 420.5749412760097
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0797,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T35": {
+      "input_sha256": "bcb3f253d87b8c1d41e34450ee1eec11a5fdc325070bd35c869833de2c7e1cf3",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.13749072010828853,
+            0.10250927989171149
+          ],
+          "dissipation_w_m": 5.1215629767065755e-11
+        },
+        "states": [
+          {
+            "time_s": 45.0,
+            "collector_voltage_v": -0.33672131713065284,
+            "mean_mol_m3": {
+              "v2": 288.7121811224363,
+              "v3": 459.4493200493282,
+              "h": 798.006913099202,
+              "hso4": 800.6709750273193,
+              "so4": 976.5541302323704
+            },
+            "outlet_mol_m3": {
+              "v2": 282.6018218900319,
+              "v3": 464.52580711879494,
+              "h": 797.0148103329957,
+              "hso4": 801.0267745462244,
+              "so4": 977.3845504616107
+            },
+            "reaction_quadrants_a_m": [
+              0.000393419698758778,
+              0.000347780600651047,
+              0.0003349125115686317,
+              0.00032388718902115764
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 232.11788364355903,
+              "v3": 497.1788517019142
+            }
+          },
+          {
+            "time_s": 65.0,
+            "collector_voltage_v": -0.34878792792367486,
+            "mean_mol_m3": {
+              "v2": 293.82146687814065,
+              "v3": 454.6092834667213,
+              "h": 799.960843597641,
+              "hso4": 800.2272488398148,
+              "so4": 975.6021894571348
+            },
+            "outlet_mol_m3": {
+              "v2": 288.7721729401727,
+              "v3": 458.1306780973468,
+              "h": 800.00754676034,
+              "hso4": 800.301751911389,
+              "so4": 975.8210875106683
+            },
+            "reaction_quadrants_a_m": [
+              1.5586383294495796e-05,
+              1.1814710529776179e-05,
+              -1.2932590471966377e-05,
+              -1.4468503352307298e-05
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 293.83332290755146,
+              "v3": 454.60137944711494
+            }
+          },
+          {
+            "time_s": 110.0,
+            "collector_voltage_v": -0.3607851678767863,
+            "mean_mol_m3": {
+              "v2": 309.75739939909846,
+              "v3": 441.50702210136575,
+              "h": 802.0469462124787,
+              "hso4": 799.2987835791579,
+              "so4": 973.3920138678069
+            },
+            "outlet_mol_m3": {
+              "v2": 314.5436279514456,
+              "v3": 437.19808101176835,
+              "h": 803.1042639586332,
+              "hso4": 798.8910976037399,
+              "so4": 972.447332646545
+            },
+            "reaction_quadrants_a_m": [
+              -0.0003884413458241654,
+              -0.00034594582448471505,
+              -0.00033792788714838754,
+              -0.0003276849425427646
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 366.367447127869,
+              "v3": 403.7669902821863
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0463,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    },
+    "T36": {
+      "input_sha256": "616e3ccea4ce3a860984ad99994c8aadf0731980dde15d19e0184fd28e7ab61c",
+      "output": {
+        "hydraulics": {
+          "inlet_pressure_pa": [
+            0.07385471990004137,
+            0.10614528009995865
+          ],
+          "dissipation_w_m": 2.973994489028088e-11
+        },
+        "states": [
+          {
+            "time_s": 20.0,
+            "collector_voltage_v": -0.3534446091388965,
+            "mean_mol_m3": {
+              "v2": 305.3179845225592,
+              "v3": 445.3994418014228,
+              "h": 221.0423563687681,
+              "hso4": 159.91125604997418,
+              "so4": 1003.982697384087
+            },
+            "outlet_mol_m3": {
+              "v2": 307.0592254968443,
+              "v3": 443.66943535077695,
+              "h": 221.59316901769344,
+              "hso4": 159.86276527887009,
+              "so4": 1003.4285803924214
+            },
+            "reaction_quadrants_a_m": [
+              -0.00030922113243654186,
+              -0.00033305136336899506,
+              -0.0002817414492516878,
+              -0.00027598605494299973
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 318.96412512685504,
+              "v3": 436.3020147318918
+            }
+          },
+          {
+            "time_s": 45.0,
+            "collector_voltage_v": -0.3499422125280368,
+            "mean_mol_m3": {
+              "v2": 302.8439894150068,
+              "v3": 447.93676633785236,
+              "h": 219.99377267327057,
+              "hso4": 159.98347464960702,
+              "so4": 1004.7542879336154
+            },
+            "outlet_mol_m3": {
+              "v2": 304.6687165147685,
+              "v3": 446.65252265380985,
+              "h": 219.9848015249653,
+              "hso4": 159.97727032873425,
+              "so4": 1004.651266093599
+            },
+            "reaction_quadrants_a_m": [
+              -1.3655613449194373e-05,
+              -1.778090257882868e-05,
+              1.632364299666496e-05,
+              1.511287303135767e-05
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 302.8403801653081,
+              "v3": 447.93917250431787
+            }
+          },
+          {
+            "time_s": 85.0,
+            "collector_voltage_v": -0.34535924998007067,
+            "mean_mol_m3": {
+              "v2": 292.52414744101503,
+              "v3": 456.3698992287177,
+              "h": 218.9434400428266,
+              "hso4": 160.1246861236987,
+              "so4": 1006.4883732436517
+            },
+            "outlet_mol_m3": {
+              "v2": 289.49912451568457,
+              "v3": 459.15798518468097,
+              "h": 218.3853624102596,
+              "hso4": 160.1948610345182,
+              "so4": 1007.3313529805763
+            },
+            "reaction_quadrants_a_m": [
+              0.0003193215371229211,
+              0.00034844249757001576,
+              0.00026831562040046097,
+              0.0002639203449061832
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 278.8850793088284,
+              "v3": 465.4626113168429
+            }
+          },
+          {
+            "time_s": 100.0,
+            "collector_voltage_v": -0.34765838086540707,
+            "mean_mol_m3": {
+              "v2": 293.45921765692077,
+              "v3": 455.15696879304744,
+              "h": 219.64201198647083,
+              "hso4": 160.07654299219575,
+              "so4": 1005.9774053436314
+            },
+            "outlet_mol_m3": {
+              "v2": 289.96001130261277,
+              "v3": 457.9250067371436,
+              "h": 219.45773340123503,
+              "hso4": 160.11819558576707,
+              "so4": 1006.5172903160623
+            },
+            "reaction_quadrants_a_m": [
+              0.00012597135079440335,
+              0.0001413557423392663,
+              6.636866875688502e-05,
+              6.630423810944417e-05
+            ],
+            "surface_mean_mol_m3": {
+              "v2": 288.9175394452455,
+              "v3": 458.18475426749717
+            }
+          }
+        ]
+      },
+      "certification": {
+        "domain_checked": true,
+        "maximum_comparison_budget_fraction": 0.0622,
+        "error_estimate_basis": "Whole fixed-time spatial increment, separate coarse-time remainder estimate, refined independent-method check and 0.01 reserve; empirical assumptions and per-case evidence in bound assessment, not a rigorous error theorem.",
+        "branch_assessment": "Positive branch followed from uniform inlet by continuous time marching; bounded domain and small residuals at every observed state; independent FV agrees. Global uniqueness and multistart validation are not claimed.",
+        "evidence": [
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-24-2p5-a1\\raw\\fe-all36-24-2p5-a1\\task__nUiMkEv\\artifacts\\logs\\artifacts\\fe-all36-24-2p5.json",
+            "sha256": "2380766ec7e7bde09c2a8ffbb7755883c3f6a29ff28963ad5ec6ff762830d6b0"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-all36-12-2p5-a1\\raw\\fe-all36-12-2p5-a1\\task__dKhNXUP\\artifacts\\logs\\artifacts\\fe-all36-12-2p5.json",
+            "sha256": "a4a5ae57d7e93c348c8db43f45a2379099207fac80ad5c76741e622b4909cf78"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-representative-12-1p25-a1\\raw\\fe-representative-12-1p25-a1\\task__gsEodHY\\artifacts\\logs\\artifacts\\fe-12-1p25.json",
+            "sha256": "6f1f371c037a566d335dcb79516575550b4e27f1e2ead7757cea69ee2ce31301"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-all36-16-40-a1\\raw\\fv-all36-16-40-a1\\task__aMzptdu\\artifacts\\logs\\artifacts\\fv-all36-16-40.json",
+            "sha256": "6737c28ad1e6aef60ae513df2571f952d674a879c6d5c0b545c9b1e03ba0fb0a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-time31-12-1p25-a1\\raw\\fe-time31-12-1p25-a1\\task__amdKQ2J\\artifacts\\logs\\artifacts\\fe-time31-12-1p25.json",
+            "sha256": "4af8a65e6fa0ead4e554d17ed31f7c02313afbba27302b08e3040c30ef915451"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fv-t25-32-80-a1\\raw\\fv-t25-32-80-a1\\task__iUevfs9\\artifacts\\logs\\artifacts\\fv-t25-32-80.json",
+            "sha256": "510c8c836581b0e05ae08b7e3f0ed7631657f4d4cf86e9f06538570be252ce8a"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p125-a1\\raw\\fe-t33-12-0p125-a1\\task__EWQmihP\\artifacts\\logs\\artifacts\\fe-t33-12-0p125.json",
+            "sha256": "2ba43713f8f3551bcd3148c1c7ab299b6839c81921a91c2ad67c88b12cbac3ac"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\runtime-calibration\\fe-t33-12-0p25-a1\\raw\\fe-t33-12-0p25-a1\\task__mrsTS5Z\\artifacts\\logs\\artifacts\\fe-t33-12-0p25.json",
+            "sha256": "855860e87715c2e8db91173f0b4632d1bf5ad6a1cae842dac04619ffc50749b9"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-assembly-plan-v1.json",
+            "sha256": "9a64ee14012212635901bd35b097e5d02ebbec65f4ec541593423ab23b6c02d2"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-assessment-v1.md",
+            "sha256": "241b84a60716924a02d93f9039f76185c4c9bd37899287fdde8fbb911f6da97b"
+          },
+          {
+            "path": "D:\\workspace\\harbor-automation\\batches\\energy-20261022\\test-design\\golden-acceptance-v1.json",
+            "sha256": "827a9179785e3360bcbdf1b9fab481c13a972520440959dca6248b7e53b95fac"
+          }
+        ]
+      }
+    }
+  }
+}

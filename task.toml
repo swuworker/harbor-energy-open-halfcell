@@ -1,0 +1,32 @@
+schema_version = "1.3"
+
+[task]
+name = "harbor-research/open-halfcell-inlet-response"
+description = "Recover the continuous hydraulic and electrochemical response of an open porous negative half-cell with inlet maldistribution."
+authors = [{name = "Harbor task author agent"}]
+keywords = ["energy-systems", "redox-flow-battery", "electroneutral-transport", "darcy-flow", "butler-volmer", "galvanostatic-transient"]
+
+[metadata]
+difficulty = "expert"
+category = "能源系统"
+expert_time_estimate_min = 240
+expert_time_estimate = "4h target, not independently validated"
+tags = ["porous-electrode", "multicomponent-transport", "continuous-response", "inlet-maldistribution"]
+difficulty_status = "target_unvalidated"
+
+[agent]
+timeout_sec = 3600
+user = "candidate"
+
+[verifier]
+timeout_sec = 2700
+user = "root"
+environment_mode = "shared"
+
+[environment]
+docker_image = "harbor-local/energy-open-halfcell:20261022-v1"
+build_timeout_sec = 900
+allow_internet = true
+cpus = 1
+memory_mb = 2048
+storage_mb = 4096

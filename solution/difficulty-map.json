@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "difficulties": [
+    {
+      "id": "A_darcy",
+      "domain_knowledge": "Recover a mixed pressure/normal-flow field, its transverse component and local speed; map the spatial field consistently into advection and mass transfer.",
+      "failure_mode": "Replace the nonuniform field with a uniform field at the same total flow.",
+      "reasoning_axes": [
+        "A_darcy"
+      ],
+      "test_ids": [
+        "T03",
+        "T04",
+        "T05",
+        "T06",
+        "T07",
+        "T08",
+        "T09",
+        "T10"
+      ],
+      "source_algorithm": "Darcy mixed-boundary pressure and nonuniform flow; paper II.1/II.3, source 148–193",
+      "source_commit": "8ad0b6414be39bea0b39dcb08b44abfcdff91b27",
+      "source_paths": [
+        "source/examples/2D/2D_galvanostatic.py"
+      ],
+      "implementation_regions": "hydraulics; Slab.velocity; Slab.__init__"
+    },
+    {
+      "id": "B_electroneutral_transport",
+      "domain_knowledge": "Reconstruct sulfate and couple concentration-dependent migration, diffusion current and compatible boundary species/charge fluxes.",
+      "failure_mode": "Use excess-supporting-electrolyte conductivity, omit sulfate charge flux, or impose an incompatible inlet potential gradient.",
+      "reasoning_axes": [
+        "B_electroneutral_transport"
+      ],
+      "test_ids": [
+        "T11",
+        "T12",
+        "T13",
+        "T14",
+        "T15",
+        "T16",
+        "T17",
+        "T18"
+      ],
+      "source_algorithm": "Five-ion electroneutral Nernst–Planck transport; paper II.2/II.3, source 210–215 and 289–399",
+      "source_commit": "8ad0b6414be39bea0b39dcb08b44abfcdff91b27",
+      "source_paths": [
+        "source/examples/2D/2D_galvanostatic.py"
+      ],
+      "implementation_regions": "Slab.unpack; Slab.fields; Slab.residual"
+    },
+    {
+      "id": "C_reaction_current",
+      "domain_knowledge": "Close bulk/surface reaction and two phase current fields simultaneously under opposite boundary currents and a common gauge.",
+      "failure_mode": "Substitute bulk-only BV or impose a spatially uniform reaction while retaining correct net current.",
+      "reasoning_axes": [
+        "C_reaction_current"
+      ],
+      "test_ids": [
+        "T19",
+        "T20",
+        "T21",
+        "T22",
+        "T23",
+        "T24",
+        "T25",
+        "T26"
+      ],
+      "source_algorithm": "Finite surface transfer/BV with distributed two-phase galvanostatic closure; paper II.2/Appendix A, source 222–248 and 305–372",
+      "source_commit": "8ad0b6414be39bea0b39dcb08b44abfcdff91b27",
+      "source_paths": [
+        "source/examples/2D/2D_galvanostatic.py"
+      ],
+      "implementation_regions": "Slab.fields; Slab.residual; Slab.observe"
+    },
+    {
+      "id": "D_open_transient",
+      "domain_knowledge": "Construct a convergent spatial/time approximation, maintain continuous concentration history at current changes, and include open-boundary inventory exchange.",
+      "failure_mode": "Reset at current changes, use steady-state replacement, or a numerically inadequate coarse approximation.",
+      "reasoning_axes": [
+        "D_open_transient"
+      ],
+      "test_ids": [
+        "T27",
+        "T28",
+        "T29",
+        "T30",
+        "T31",
+        "T32",
+        "T33",
+        "T34",
+        "T35",
+        "T36"
+      ],
+      "source_algorithm": "Continuous transient multi-ion inventory with open inlet/outlet and applied-current stages; paper II.2/II.3/III, source 336–399 and 727–769",
+      "source_commit": "8ad0b6414be39bea0b39dcb08b44abfcdff91b27",
+      "source_paths": [
+        "source/examples/2D/2D_galvanostatic.py"
+      ],
+      "implementation_regions": "Slab.evolve; Slab.newton; Slab.observe"
+    }
+  ],
+  "independence_status": "requires_independent_frozen_domain_evidence",
+  "has_cross_run_state_axis": false,
+  "notes": [
+    "This hidden map is documentation, not a score or a C6 approval.",
+    "Surface algebra, gauge choice, extra outputs and mesh points are not separate reasoning axes.",
+    "Test identifiers refer to the current forty-item manifest; numerical goldens and final version binding remain separate."
+  ]
+}

@@ -1,0 +1,6 @@
+# Fixed clean initial image prepared through Harbor image_cache.
+# No build override, privileged mode, host socket, or shared answers.
+services:
+  main:
+    image: harbor-local/energy-open-halfcell:20261022-v1
+    pull_policy: never

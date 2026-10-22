@@ -1,0 +1,485 @@
+{
+  "schema_version": "1.0",
+  "tests": [
+    {
+      "id": "T01",
+      "pass_criteria": "Uniform equilibrium with a nonuniform inlet velocity; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T01"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T02",
+      "pass_criteria": "Unequal redox equilibrium with asymmetric transfer exponent; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T02"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T03",
+      "pass_criteria": "Uniform-flow control with nonzero coupled transient; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T03"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T04",
+      "pass_criteria": "Collector-side inlet loading and kinetic redistribution; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T04"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T05",
+      "pass_criteria": "Membrane-side inlet loading at identical mean flow; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T05"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T06",
+      "pass_criteria": "Intermediate inlet contrast with unequal transfer rates; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T06"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T07",
+      "pass_criteria": "Slow renewal with finite surface transfer over long duration; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T07"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T08",
+      "pass_criteria": "Moderate-Peclet fast renewal with inlet maldistribution; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T08"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T09",
+      "pass_criteria": "Viscosity-density dependence in hydraulic load and local transfer; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T09"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T10",
+      "pass_criteria": "Longer flow direction with unchanged through-plane thickness; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T10"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T11",
+      "pass_criteria": "Moderate supporting-ion concentration and nonconstant liquid conduction; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T11"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T12",
+      "pass_criteria": "Dependent sulfate contribution with increased sulfate mobility; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T12"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T13",
+      "pass_criteria": "Unequal redox diffusivities and diffusion-current feedback; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T13"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T14",
+      "pass_criteria": "HSO4-rich inlet with positive dependent sulfate; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T14"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T15",
+      "pass_criteria": "Dilute active ions with comparable supporting-ion response; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T15"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T16",
+      "pass_criteria": "Equal intrinsic diffusivities as an electroneutral diffusion-current anchor; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T16"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T17",
+      "pass_criteria": "Lower porosity changes both storage and electrolyte transport; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T17"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T18",
+      "pass_criteria": "High porosity couples reduced solid conductivity to ionic storage; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T18"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T19",
+      "pass_criteria": "Fast kinetics with finite unequal mass-transfer resistance; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T19"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T20",
+      "pass_criteria": "Low solid conductivity requires spatial phase-current redistribution; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T20"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T21",
+      "pass_criteria": "Anodic coefficient at its low endpoint with finite transfer; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T21"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T22",
+      "pass_criteria": "Anodic coefficient at its high endpoint under reduction; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T22"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T23",
+      "pass_criteria": "Oxidation from low reduced fraction with bounded surface depletion; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T23"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T24",
+      "pass_criteria": "Reduction from low oxidized fraction changes the limiting surface; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T24"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T25",
+      "pass_criteria": "Large internal area with finite electronic conduction; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T25"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T26",
+      "pass_criteria": "Temperature-dependent kinetic and migration balance under reversal; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T26"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T27",
+      "pass_criteria": "Oxidation-rest-reduction retains the formed concentration field; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T27"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T28",
+      "pass_criteria": "Immediate current reversal keeps continuous bulk inventories; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T28"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T29",
+      "pass_criteria": "Same-current stage split is a continuous trajectory; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T29"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T30",
+      "pass_criteria": "Open-boundary relaxation after a long oxidation stage; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T30"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T31",
+      "pass_criteria": "Positive prefix changes the response to the common suffix; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T31"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T32",
+      "pass_criteria": "Negative prefix changes the response to the common suffix; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T32"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T33",
+      "pass_criteria": "Short initial pulse followed by rest and a long opposite stage; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T33"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T34",
+      "pass_criteria": "Slow-flow multistage memory and membrane proton exchange; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T34"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T35",
+      "pass_criteria": "Lower internal area with finite transfer across long stages; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T35"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T36",
+      "pass_criteria": "Combined maldistribution-supporting-ion-current history; every published output field at every requested stage agrees with the independently validated continuum expectation within the public tolerances",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T36"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T37",
+      "pass_criteria": "Malformed JSON is rejected without a traceback; return exactly {\"error\":\"invalid_input\"} with successful process exit",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T37"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T38",
+      "pass_criteria": "Boolean numeric input is rejected; return exactly {\"error\":\"invalid_input\"} with successful process exit",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T38"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T39",
+      "pass_criteria": "Wrong diffusivity array shape is rejected; return exactly {\"error\":\"invalid_input\"} with successful process exit",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T39"
+      ],
+      "timeout_sec": 65
+    },
+    {
+      "id": "T40",
+      "pass_criteria": "Explicit Peclet-domain violation is rejected; return exactly {\"error\":\"invalid_input\"} with successful process exit",
+      "path": "tests/check.py",
+      "command": [
+        "/opt/venv/bin/python",
+        "-I",
+        "/tests/check.py",
+        "T40"
+      ],
+      "timeout_sec": 65
+    }
+  ]
+}
